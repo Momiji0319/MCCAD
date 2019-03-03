@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SquereEditor.Properties
+namespace MCCAD.Properties
 {
 
 

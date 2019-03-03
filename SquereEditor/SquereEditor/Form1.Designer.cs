@@ -1,4 +1,4 @@
-﻿namespace SquereEditor
+﻿namespace MCCAD
 {
     partial class Form1
     {
@@ -42,14 +42,15 @@
             this.jPEG形式ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.終了ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.編集ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.元に戻すToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.やり直しToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.座標へ移動ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ツールToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.二点間の距離を測定するToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -162,31 +163,22 @@
             this.編集ToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.編集ToolStripMenuItem.Text = "編集";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.statusStrip1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 26);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 424);
-            this.panel1.TabIndex = 1;
-            // 
             // 元に戻すToolStripMenuItem
             // 
             this.元に戻すToolStripMenuItem.Name = "元に戻すToolStripMenuItem";
-            this.元に戻すToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.元に戻すToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.元に戻すToolStripMenuItem.Text = "元に戻す";
             // 
             // やり直しToolStripMenuItem
             // 
             this.やり直しToolStripMenuItem.Name = "やり直しToolStripMenuItem";
-            this.やり直しToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.やり直しToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.やり直しToolStripMenuItem.Text = "やり直し";
             // 
             // 座標へ移動ToolStripMenuItem
             // 
             this.座標へ移動ToolStripMenuItem.Name = "座標へ移動ToolStripMenuItem";
-            this.座標へ移動ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.座標へ移動ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
             this.座標へ移動ToolStripMenuItem.Text = "座標へ移動";
             // 
             // ツールToolStripMenuItem
@@ -203,20 +195,36 @@
             this.二点間の距離を測定するToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.二点間の距離を測定するToolStripMenuItem.Text = "二点間の距離を測定する";
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.statusStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 424);
+            this.panel1.TabIndex = 1;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 402);
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 401);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(800, 23);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 18);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(134, 18);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
             // Form1
             // 
@@ -266,6 +274,7 @@
         private System.Windows.Forms.ToolStripMenuItem 二点間の距離を測定するToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 

@@ -1,7 +1,10 @@
 ﻿using System.Drawing;
 
-namespace SquereEditor
+namespace MCCAD
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class Squere
     {
         private int x;
@@ -20,5 +23,6 @@ namespace SquereEditor
             Color = c;
             IsFill = isf;
         }
+        internal Point Point => new Point(x, y);
     }
 }
