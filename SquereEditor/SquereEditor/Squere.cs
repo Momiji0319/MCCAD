@@ -1,11 +1,11 @@
 ﻿using System.Drawing;
 
-namespace MCCAD
+namespace Mccad
 {
     /// <summary>
     /// 
     /// </summary>
-    internal class Squere
+    public class Squere
     {
         private int x;
         private int y;
@@ -18,10 +18,10 @@ namespace MCCAD
 
         internal Squere(Point p,Color c,bool isf)
         {
-            X = p.X;
-            Y = p.Y;
-            Color = c;
-            IsFill = isf;
+            x = p.X;
+            y = p.Y;
+            color = c;
+            isFill = isf;
         }
         internal Point Point => new Point(x, y);
     }

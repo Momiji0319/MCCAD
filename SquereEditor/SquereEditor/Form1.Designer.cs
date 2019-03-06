@@ -1,4 +1,4 @@
-﻿namespace MCCAD
+﻿namespace Mccad
 {
     partial class Form1
     {
@@ -51,6 +51,9 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.色を変更するToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -92,6 +95,7 @@
             this.開くToolStripMenuItem.Name = "開くToolStripMenuItem";
             this.開くToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.開くToolStripMenuItem.Text = "開く";
+            this.開くToolStripMenuItem.Click += new System.EventHandler(this.開くToolStripMenuItem_Click);
             // 
             // 保存するToolStripMenuItem
             // 
@@ -113,6 +117,7 @@
             this.名前をつけて保存ToolStripMenuItem.Name = "名前をつけて保存ToolStripMenuItem";
             this.名前をつけて保存ToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.名前をつけて保存ToolStripMenuItem.Text = "名前をつけて保存";
+            this.名前をつけて保存ToolStripMenuItem.Click += new System.EventHandler(this.名前をつけて保存ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -158,7 +163,9 @@
             this.編集ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.元に戻すToolStripMenuItem,
             this.やり直しToolStripMenuItem,
-            this.座標へ移動ToolStripMenuItem});
+            this.座標へ移動ToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.色を変更するToolStripMenuItem});
             this.編集ToolStripMenuItem.Name = "編集ToolStripMenuItem";
             this.編集ToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.編集ToolStripMenuItem.Text = "編集";
@@ -166,19 +173,19 @@
             // 元に戻すToolStripMenuItem
             // 
             this.元に戻すToolStripMenuItem.Name = "元に戻すToolStripMenuItem";
-            this.元に戻すToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.元に戻すToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.元に戻すToolStripMenuItem.Text = "元に戻す";
             // 
             // やり直しToolStripMenuItem
             // 
             this.やり直しToolStripMenuItem.Name = "やり直しToolStripMenuItem";
-            this.やり直しToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.やり直しToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.やり直しToolStripMenuItem.Text = "やり直し";
             // 
             // 座標へ移動ToolStripMenuItem
             // 
             this.座標へ移動ToolStripMenuItem.Name = "座標へ移動ToolStripMenuItem";
-            this.座標へ移動ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.座標へ移動ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.座標へ移動ToolStripMenuItem.Text = "座標へ移動";
             // 
             // ツールToolStripMenuItem
@@ -208,7 +215,8 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
+            this.toolStripStatusLabel2,
+            this.toolStripStatusLabel3});
             this.statusStrip1.Location = new System.Drawing.Point(0, 401);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(800, 23);
@@ -225,6 +233,24 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(134, 18);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // 色を変更するToolStripMenuItem
+            // 
+            this.色を変更するToolStripMenuItem.Name = "色を変更するToolStripMenuItem";
+            this.色を変更するToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.色を変更するToolStripMenuItem.Text = "色を変更する";
+            this.色を変更するToolStripMenuItem.Click += new System.EventHandler(this.色を変更するToolStripMenuItem_Click);
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(134, 18);
+            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
             // 
             // Form1
             // 
@@ -275,6 +301,9 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem 色を変更するToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
     }
 }
 

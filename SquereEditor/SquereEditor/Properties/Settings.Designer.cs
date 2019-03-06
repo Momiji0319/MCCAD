@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MCCAD.Properties
+namespace Mccad.Properties
 {
 
 
